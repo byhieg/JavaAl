@@ -23,13 +23,10 @@ public class Test {
     }
 
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
-        int a = 21;
-        int b = 2;
-        a = a ^b;
-        b = b ^ a;
-        a = a ^ b;
-        System.out.println(a);
-        System.out.println(b);
+        int i = 0xffffff01;
+        int j = ~i;
+        System.out.println(i);
+        System.out.println(j);
 //        method.invoke(test, new Object[]{new String[]{"123"}});
     }
 }
